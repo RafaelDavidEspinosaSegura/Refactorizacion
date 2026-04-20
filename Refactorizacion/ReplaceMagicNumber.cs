@@ -11,3 +11,10 @@ double precio = 1000;
 double descuento = precio * VIP_DISCOUNT;
 Console.WriteLine("Precio con descuento: " + descuento);
 
+//Replace Magic Number refactorizado
+
+const double VIP_DISCOUNT = 0.9;
+double precio = 1000;
+double descuento = precio * VIP_DISCOUNT;
+Console.WriteLine("Precio con descuento: " + descuento);
+

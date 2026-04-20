@@ -21,4 +21,25 @@ class Program
     }
 }
 
+// Move Method refactorizado
+
+class Cliente
+{
+    public string Nombre { get; set; }
+    public int Puntos { get; set; }
+
+    public string CalcularNivel()
+    {
+        return Puntos > 100 ? "Premium" : "Regular";
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Cliente c = new Cliente { Nombre = "David", Puntos = 120 };
+        Console.WriteLine("Nivel de cliente: " + c.CalcularNivel());
+    }
+}
 

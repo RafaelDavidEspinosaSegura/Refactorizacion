@@ -20,3 +20,26 @@ class Program
 }
 
 
+//Extract Method refactorizado
+
+
+
+class Program
+{
+    static void Main()
+    {
+        int[] numeros = { 5, 10, 15, 20 };
+        Console.WriteLine("El promedio es: " + CalcularPromedio(numeros));
+    }
+
+    static double CalcularPromedio(int[] valores)
+    {
+        int suma = 0;
+        foreach (var v in valores)
+        {
+            suma += v;
+        }
+        return (double)suma / valores.Length;
+    }
+}
+
