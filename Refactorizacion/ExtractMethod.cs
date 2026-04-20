@@ -43,3 +43,7 @@ class Program
     }
 }
 
+// Se  toma el bloque de codigo repetitivo y se movio a un metodo separado.
+// Mejorando la legibilidad y mantenibilidad del codigo.
+// Permite reutilizar en otros lugares sin duplicar codigo.
+// Facilita las pruebas unitarias al aislar la logica en un metodo independiente.
